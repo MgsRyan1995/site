@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.spacer {
+  margin-bottom: 100px;
+}
+
+.nav-color {
+  border-color: #ff0;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.adlam-display-regular {
+  font-family: "ADLaM Display", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+}
+
+.top-bar a {
+  color: #ff0;
+  margin-right: 50px;
+  font-size: 1.5rem;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ff0;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.under-nav {
+  height: 90vh; /* Adjust as needed */
+  background-color: #ffffff;
+  color: rgb(238, 234, 224);
+  background-image: url(AdobeStock_341661747.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#moto-position1 {
+  margin-top: 15vh;
+  font-size: 3rem;
+}
+
+#moto-position2 {
+  margin-bottom: 19vh;
+  font-size: 3rem;
+}
+
+.about-us {
+  background-color: #000000;
+  color: white;
+  padding: 20px; /* Adjust as needed */
+}
+
+.contact-us-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contact-us-styling {
+  background-color: #ffffff;
+  padding: 20px; /* Adjust as needed */
+}
+
+.icon-container {
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.footer1 {
+  background-color: #333333;
+  color: white;
+  padding: 20px; /* Adjust as needed */
+}
+
+.footer2 {
+  background-color: black;
+  color: white;
+
+  padding: 20px; /* Adjust as needed */
+}
+
+.text-style,
+.text-style-white {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 4vw; /* Adjust as needed */
+}
+
+#consultation {
+  margin-top: 50px;
+  height: 500px;
+  background-color: #000000;
+  color: white;
+  border-top: #ff0 10px solid;
+}
+#consultationText {
+  font-size: 26px;
+}
+
+#buttonStyle {
+  margin-bottom: 20px;
+}
+
+.image1 {
+  width: 500px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  border: 1px solid yellow;
+}
+
+.blackbackground {
+  background-color: black;
+  height: auto;
+}
+
+.textstyle {
+  color: white;
+}
+
+.underline {
+  border-bottom: 10px solid #ff0;
+}
+
+.about-us-header {
+  font-size: 50px;
+
+  margin-bottom: 50px;
+}
+
+.textstyle {
+  font-size: 36px;
+}
+
+.word-highlight {
+  color: #ff0;
+}
+
+.card-style {
+  width: 15rem;
+  margin-bottom: 50px;
+}
+
+#listStyle {
+  list-style: none;
+}
+
+.linkedIn-ImageStyle {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+
+/* Samsung galaxy fold DONE*/
+@media only screen and (max-width: 280px) {
+  .card-style {
+    margin-left: 1rem;
+  }
+
+  #moto-position1 {
+    margin-top: 15vh;
+    font-size: 2rem;
+  }
+
+  #moto-position2 {
+    margin-bottom: 19vh;
+    font-size: 2rem;
+  }
+
+  .push-center {
+    margin-left: 10rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-style {
+    margin-left: 1rem;
+  }
+
+  #moto-position1 {
+    margin-top: 15vh;
+    font-size: 2rem;
+  }
+
+  #moto-position2 {
+    margin-bottom: 19vh;
+    font-size: 2rem;
+  }
+
+  .our-approach-cards {
+    margin-right: 6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for even smaller screens */
+  .top-bar {
+    font-size: 14px;
+  }
+
+  .imagememe {
+    max-width: 80%;
+  }
+
+  .top-bar a {
+    margin-right: 0px;
+  }
+
+  .push-center {
+    margin-left: 30px;
+  }
+
+  .card-style {
+    margin-left: 4rem;
+  }
+
+  /* Add more adjustments as needed */
+}
+
+@media only screen and (min-width: 820px) {
+  /* Adjust styles for smaller screens */
+  .top-bar {
+    font-size: 16px;
+  }
+  .imagememe {
+    max-width: 80%;
+  }
+
+  .card-container-position {
+    margin-top: 30px;
+  }
+
+  .card-style {
+    margin-left: 5rem;
+  }
+
+  /* Add more adjustments as needed */
+}
+
+/* CENTER our approach cards */
+/* linked in logo SOMEWHERE */
